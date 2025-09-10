@@ -1,0 +1,62 @@
+html, body {
+  font-family: Arial, sans-serif;
+  width: 400px;      /* popup width */
+  height: 500px;     /* popup height */
+  margin: 0;
+  background: #f9f9f9;
+  overflow-y: auto;  /* add scroll if content overflows */
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.input-area {
+  display: flex;
+  gap: 5px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 5px;
+}
+
+#addTaskBtn {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px;
+  margin-bottom: 4px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+button.deleteBtn {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
